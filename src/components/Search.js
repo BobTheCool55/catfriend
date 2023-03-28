@@ -1,10 +1,11 @@
 import React from "react";
 
 const Search = (Component) => {
-    const {searchChange} = Component;
+    const {searchChangeName, searchChangeGmail} = Component;
     return (
-        <div className="pa2">
-            <input className="pa3 ba b--green bg-lightest-blue" type='search' placeholder='Search a cat' onChange={searchChange}/>
+        <div>
+            <input className="pa3 br3 ma3 ba b--green bg-lightest-blue" type='search' placeholder='Search a cat by name' onChange={searchChangeName}/>
+            <input className="pa3 br3 ma3 ba b--green bg-lightest-blue" type='search' placeholder='Search a cat by Gmail' onChange={searchChangeGmail}/>
         </div>
     );
 }
